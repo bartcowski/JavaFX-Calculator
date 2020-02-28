@@ -11,7 +11,7 @@ import javafx.scene.control.Alert.AlertType;
  * Responsible for connecting View and Model, sets up interactive elements
  * of GUI, allows for user input and manages errors.
  * 
- * @author Bartosz Ciuækowski
+ * @author Bartosz CiuÃ¦kowski
  * @version 1.0
  */
 public class Controller {
@@ -405,8 +405,8 @@ public class Controller {
 	 * Checks if user is not trying to divide by 0.
 	 * 
 	 * @param expr is an expression to be checked
-	 * @return 0 if there is no error
-	 * 		   1 if there is an error
+	 * @return false if there is no error
+	 * 		   true if there is an error
 	 */
     private boolean isZeroDivision(String expr) {
     	if(exprToCalc.length() < 3) return false;
@@ -425,8 +425,8 @@ public class Controller {
 	 * Checks if current number doesn't end with a point sign.
 	 * 
 	 * @param display is given to get its text
-	 * @return 0 if there is no error
-	 * 		   1 if there is an error
+	 * @return false if there is no error
+	 * 		   true if there is an error
 	 */
     private boolean isPointAtEnd(TextField display) {
     	if(display.getText().substring(display.getText().length() - 1).equals(".")) {
@@ -440,8 +440,8 @@ public class Controller {
 	 * Checks if user got to infinity
 	 * 
 	 * @param display is given to get its text
-	 * @return 0 if there is no error
-	 * 		   1 if there is an error
+	 * @return false if there is no error
+	 * 		   true if there is an error
 	 */
     private boolean isInfinity(TextField display) {
     	if(display.getText().contains("Infinity")) {
