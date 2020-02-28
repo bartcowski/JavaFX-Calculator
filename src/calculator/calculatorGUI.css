@@ -1,0 +1,54 @@
+.display {
+	-fx-font-size: 34px;
+	-fx-background-color: #cac7e2;
+	-fx-text-fill: black;
+	
+}
+
+.button {
+	/** @SuppressWarnings */
+	-fx-font-size: 28px;
+	-fx-border-width: 0.5px;
+	-fx-border-style: solid;
+	-fx-border-color: black;
+}
+
+.regular {
+	-fx-background-color: #210b7a;
+	-fx-text-fill: white;
+	
+} 
+
+.regular:hover {
+	-fx-background-color: #361aa5;
+}
+
+.regular:pressed {
+	-fx-background-color: #431dd6;
+}
+
+.operations {
+	-fx-background-color: #bca605;
+	
+}
+
+.operations:hover {
+	-fx-background-color: #c9b625;
+}
+
+.operations:pressed {
+	-fx-background-color: #d6c861;
+}
+
+.additional {
+	-fx-background-color: #ead015;
+	
+}
+
+.additional:hover {
+	-fx-background-color: #f4e25c;
+}
+
+.additional:pressed {
+	-fx-background-color: #f9ec94;
+}
